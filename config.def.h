@@ -10,14 +10,14 @@ static const unsigned int gappov    = 30;       /* vert outer gap between window
 static       int smartgaps          = 0;        /* 1 means no outer gap when there is only one window */
 static const unsigned int systraypinning = 0;   /* 0: sloppy systray follows selected monitor, >0: pin systray to monitor X */
 static const unsigned int systrayonleft = 0;   	/* 0: systray in the right corner, >0: systray on left of status text */
-static const unsigned int systrayspacing = 2;   /* systray spacing */
+static const unsigned int systrayspacing = 6;   /* systray spacing */
 static const unsigned int systrayiconsize = 14; /* systray icon size in px */
 static const int systraypinningfailfirst = 1;   /* 1: if pinning fails, display systray on the first monitor, False: display systray on the last monitor*/
 static const int showsystray        = 1;     /* 0 means no systray */
 static const int showbar            = 1;     /* 0 means no bar */
 static const int topbar             = 1;     /* 0 means bottom bar */
-static const int user_bh            = 2;        /* 2 is the default spacing around the bar's font */
-static const char *fonts[]          = { "monospace:size=10" };
+static const int user_bh            = 12;        /* 2 is the default spacing around the bar's font */
+static const char *fonts[]          = { "FontAwesome:style=Bold:size=14" };
 static const char dmenufont[]       = "monospace:size=10";
 /* Polar Night */
 static const char nord0[]           = "#2e3440";
@@ -39,6 +39,7 @@ static const char nord12[]          = "#d08770";
 static const char nord13[]          = "#ebcb8b";
 static const char nord14[]          = "#a3be8c";
 static const char nord15[]          = "#b48ead";
+/* Stock colors */
 static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
@@ -46,8 +47,8 @@ static const char col_gray4[]       = "#eeeeee";
 static const char col_cyan[]        = "#005577";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
-	[SchemeNorm] = { nord3, nord0, nord1 },
-	[SchemeSel]  = { nord5, nord8,  nord8  },
+	[SchemeNorm] = { nord6, nord0, nord1 },
+	[SchemeSel]  = { nord3, nord7,  nord7  },
 };
 
 /* tagging */
